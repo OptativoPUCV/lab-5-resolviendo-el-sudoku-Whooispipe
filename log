@@ -141,3 +141,14 @@ Sun, May 18, 2025  1:15:08 AM:
  tests:  2|4
 total_score: 15/70
 da51edd
+Sun, May 18, 2025  1:23:00 AM: 
+ sudoku.c | 41 ++++++++++++++++++++++++++++++++++++-----
+ 1 file changed, 36 insertions(+), 5 deletions(-)
+Compilation failed
+In file included from test.c:5:0:
+sudoku.c: In function 'is_valid':
+sudoku.c:51:35: error: statement with no effect [-Werror=unused-value]
+     for(int j=0;j<=9;j++)marked[j]==0;
+                          ~~~~~~~~~^~~
+cc1.exe: all warnings being treated as errors
+6d51284
