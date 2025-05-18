@@ -185,7 +185,7 @@ Node* DFS(Node* initial, int* cont){
     push(s,initial);
     int final=is_final(initial);
     if(final==1){return initial;}
-  return NULL;
+
 }
 
 
