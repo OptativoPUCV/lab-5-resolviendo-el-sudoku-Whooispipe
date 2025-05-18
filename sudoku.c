@@ -69,7 +69,7 @@ List* get_adj_nodes(Node* n){
     int row =-1; 
     int col =-1;
     int found =0;
-    for(int i; i<9&& row == -1;i++
+    for(int i; i<9&& row == -1;i++)
       {
 
         for(int j=0;j<9;j++)

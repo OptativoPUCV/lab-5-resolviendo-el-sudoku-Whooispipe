@@ -28,3 +28,17 @@ sudoku.c:85:1: error: control reaches end of non-void function [-Werror=return-t
  ^
 cc1.exe: all warnings being treated as errors
 02b60d6
+Sun, May 18, 2025 12:20:57 AM: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:0:
+sudoku.c: In function 'get_adj_nodes':
+sudoku.c:71:9: error: unused variable 'found' [-Werror=unused-variable]
+     int found =0;
+         ^~~~~
+sudoku.c:70:9: error: variable 'col' set but not used [-Werror=unused-but-set-variable]
+     int col =-1;
+         ^~~
+cc1.exe: all warnings being treated as errors
+921ce55
