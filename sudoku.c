@@ -173,7 +173,7 @@ int is_final(Node* n){
    
    b) Verifique si corresponde a un estado final, si es así retorne el nodo./listo
 
-   c) Obtenga la lista de nodos adyacentes al nodo.
+   c) Obtenga la lista de nodos adyacentes al nodo./listo
    
    d) Agregue los nodos de la lista (uno por uno) al stack S.
    
@@ -195,7 +195,16 @@ Node* DFS(Node* initial, int* cont){
       }
       List *adj =get_adj_nodes(current);
        
-      
+      Node* nodoaprocesar=(Node*)first(adj);
+      while(nodoaprocesar!=NULL)
+      {
+
+        push(s,nodoaprocesar);
+        nodoaprocesar=(Node*)next(adj);
+      }
+      free(adj);
+      free(current);
+
 
     }
   return NULL;
