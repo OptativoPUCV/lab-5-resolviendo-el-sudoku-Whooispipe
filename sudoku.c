@@ -91,7 +91,7 @@ List* get_adj_nodes(Node* n)
     Node* nuevo=malloc(sizeof(Node));
     if(nuevo==NULL)
     {
-      return(EXIT_FAILURE);
+      exit(EXIT_FAILURE);
     }
     memcpy(nuevo->sudo,n->sudo,sizeof(n->sudo));    
     nuevo->sudo[filas][col]=p;
