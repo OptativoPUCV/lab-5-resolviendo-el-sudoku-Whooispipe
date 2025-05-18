@@ -84,7 +84,7 @@ List* get_adj_nodes(Node* n)
         }
       }
     
-    if(filas==-1){return list};
+    if(filas==-1){return list;}
   for(int p=1; p<=9;p++)
   {
 
