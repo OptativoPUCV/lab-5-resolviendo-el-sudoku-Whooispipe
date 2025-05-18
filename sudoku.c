@@ -66,21 +66,37 @@ Recuerde que los nodos adyacentes son generados aplicando las acciones al estado
 
 List* get_adj_nodes(Node* n){
     List* list=createList();
-    int row =-1; 
+    int filas =-1; 
     int col =-1;
     int found =0;
-    for(int i=0; i<9&& row == -1;i++)
+    for(int i=0; i<9&& filas == -1;i++)
       {
 
         for(int j=0;j<9;j++)
         {
           if(n->sudo[i][j]==0)
           {
-            row=i;
+            filas=i;
             col=j;
+            break;
           }
         }
       }
+    
+      if(filas==-1)return list;
+    for(int p=1; p<=9;p++)
+    {
+
+      Node* nuevo=malloc(sizeof(Node));
+      if(nuevo==NULL)
+      {
+        return(EXIT_FAILURE);
+      }
+      memcpy(nuevo->sudo,n->sudo,sizeof(n->sudo));    
+      nuevo->sudo[filas][col]=p;
+      pushBack(list,nuevo)
+    
+    }
     return list;
 }
 

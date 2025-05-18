@@ -68,3 +68,20 @@ sudoku.c:70:9: error: variable 'col' set but not used [-Werror=unused-but-set-va
          ^~~
 cc1.exe: all warnings being treated as errors
 9879819
+Sun, May 18, 2025 12:28:39 AM: 
+ sudoku.c | 22 +++++++++++++++++++---
+ 1 file changed, 19 insertions(+), 3 deletions(-)
+Compilation failed
+In file included from test.c:5:0:
+sudoku.c: In function 'get_adj_nodes':
+sudoku.c:93:15: error: return makes pointer from integer without a cast [-Werror=int-conversion]
+         return(EXIT_FAILURE);
+               ^
+sudoku.c:99:5: error: expected ';' before '}' token
+     }
+     ^
+sudoku.c:71:9: error: unused variable 'found' [-Werror=unused-variable]
+     int found =0;
+         ^~~~~
+cc1.exe: all warnings being treated as errors
+f3bd112
