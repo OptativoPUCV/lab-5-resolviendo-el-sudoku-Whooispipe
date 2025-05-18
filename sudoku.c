@@ -169,10 +169,10 @@ int is_final(Node* n){
 /*1. Cree un stack S (pila) e inserte el nodo.
 2. Mientras el stack S no se encuentre vacío:
 
-   a) Saque y elimine el primer nodo de S.
+   a) Saque y elimine el primer nodo de S./ listo
    
-   b) Verifique si corresponde a un estado final, si es así retorne el nodo.
-   
+   b) Verifique si corresponde a un estado final, si es así retorne el nodo./listo
+
    c) Obtenga la lista de nodos adyacentes al nodo.
    
    d) Agregue los nodos de la lista (uno por uno) al stack S.
@@ -193,6 +193,9 @@ Node* DFS(Node* initial, int* cont){
         return current;
 
       }
+      List *adj =get_adj_nodes(current);
+       
+      
 
     }
   return NULL;
