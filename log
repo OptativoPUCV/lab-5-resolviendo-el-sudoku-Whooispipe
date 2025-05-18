@@ -2,3 +2,29 @@ Sat, May 17, 2025  2:30:42 PM:
  tests:  0|5
 total_score: 0/70
 3f0e54c
+Sun, May 18, 2025 12:20:44 AM: 
+ sudoku.c | 30 ++++++++++++++++++++++++++++++
+ 1 file changed, 30 insertions(+)
+Compilation failed
+In file included from test.c:5:0:
+sudoku.c: In function 'get_adj_nodes':
+sudoku.c:73:7: error: expected ')' before '{' token
+       {
+       ^
+sudoku.c:85:1: error: expected expression before '}' token
+ }
+ ^
+sudoku.c:71:9: error: unused variable 'found' [-Werror=unused-variable]
+     int found =0;
+         ^~~~~
+sudoku.c:70:9: error: unused variable 'col' [-Werror=unused-variable]
+     int col =-1;
+         ^~~
+sudoku.c:68:11: error: unused variable 'list' [-Werror=unused-variable]
+     List* list=createList();
+           ^~~~
+sudoku.c:85:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1.exe: all warnings being treated as errors
+02b60d6
