@@ -137,7 +137,13 @@ List* get_adj_nodes(Node* n)
     }
     memcpy(nuevo->sudo,n->sudo,sizeof(n->sudo));    
     nuevo->sudo[filas][col]=p;
-    pushBack(list,nuevo);
+    
+    if(is_valid(list,nuevo))
+    {
+      pushBack(list,nuevo);
+    }
+    else{free(nuevo);}
+    
     
   }
   return list;
