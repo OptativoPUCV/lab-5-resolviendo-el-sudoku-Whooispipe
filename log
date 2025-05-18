@@ -99,3 +99,17 @@ sudoku.c:99:5: error: expected ';' before '}' token
      ^
 cc1.exe: all warnings being treated as errors
 cea817b
+Sun, May 18, 2025 12:30:06 AM: 
+ sudoku.c | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+Compilation failed
+In file included from test.c:5:0:
+sudoku.c: In function 'get_adj_nodes':
+sudoku.c:87:30: error: expected ';' before '}' token
+     if(filas==-1){return list};
+                              ^
+sudoku.c:94:13: error: return makes pointer from integer without a cast [-Werror=int-conversion]
+       return(EXIT_FAILURE);
+             ^
+cc1.exe: all warnings being treated as errors
+6e6ec87

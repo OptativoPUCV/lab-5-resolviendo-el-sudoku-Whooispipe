@@ -64,7 +64,8 @@ int is_valid(Node* n){
 Recuerde que los nodos adyacentes son generados aplicando las acciones al estado actual.
 */
 
-List* get_adj_nodes(Node* n){
+List* get_adj_nodes(Node* n)
+{
     List* list=createList();
     int filas =-1; 
     int col =-1;
@@ -83,21 +84,21 @@ List* get_adj_nodes(Node* n){
         }
       }
     
-      if(filas==-1)return list;
-    for(int p=1; p<=9;p++)
-    {
+    if(filas==-1){return list};
+  for(int p=1; p<=9;p++)
+  {
 
-      Node* nuevo=malloc(sizeof(Node));
-      if(nuevo==NULL)
-      {
-        return(EXIT_FAILURE);
-      }
-      memcpy(nuevo->sudo,n->sudo,sizeof(n->sudo));    
-      nuevo->sudo[filas][col]=p;
-      pushBack(list,nuevo)
-    
+    Node* nuevo=malloc(sizeof(Node));
+    if(nuevo==NULL)
+    {
+      return(EXIT_FAILURE);
     }
-    return list;
+    memcpy(nuevo->sudo,n->sudo,sizeof(n->sudo));    
+    nuevo->sudo[filas][col]=p;
+    pushBack(list,nuevo);
+    
+  }
+  return list;
 }
 
 
