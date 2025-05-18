@@ -184,7 +184,7 @@ Node* DFS(Node* initial, int* cont){
   Stack *s=createStack();
     push(s,initial);
     int final=is_final(initial);
-    if(final==1){return 1;}
+    if(final==1){return initial;}
   return NULL;
 }
 
