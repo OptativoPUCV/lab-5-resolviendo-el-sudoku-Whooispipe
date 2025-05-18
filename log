@@ -85,3 +85,17 @@ sudoku.c:71:9: error: unused variable 'found' [-Werror=unused-variable]
          ^~~~~
 cc1.exe: all warnings being treated as errors
 f3bd112
+Sun, May 18, 2025 12:28:55 AM: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:0:
+sudoku.c: In function 'get_adj_nodes':
+sudoku.c:93:15: error: return makes pointer from integer without a cast [-Werror=int-conversion]
+         return(EXIT_FAILURE);
+               ^
+sudoku.c:99:5: error: expected ';' before '}' token
+     }
+     ^
+cc1.exe: all warnings being treated as errors
+cea817b

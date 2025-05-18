@@ -68,7 +68,7 @@ List* get_adj_nodes(Node* n){
     List* list=createList();
     int filas =-1; 
     int col =-1;
-    int found =0;
+
     for(int i=0; i<9&& filas == -1;i++)
       {
 
